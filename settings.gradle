@@ -1,0 +1,10 @@
+rootProject.name = 'uca-seata-samples'
+include 'uca-springcloud-jpa-seata'
+include 'uca-springcloud-jpa-seata:uca-business-service'
+include 'uca-springcloud-jpa-seata:uca-order-service'
+findProject(':uca-springcloud-jpa-seata:uca-order-service')?.name = 'uca-order-service'
+include 'uca-springcloud-jpa-seata:uca-storage-service'
+findProject(':uca-springcloud-jpa-seata:uca-storage-service')?.name = 'uca-storage-service'
+include 'uca-springcloud-jpa-seata:uca-user-service'
+findProject(':uca-springcloud-jpa-seata:uca-user-service')?.name = 'uca-user-service'
+
